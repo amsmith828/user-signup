@@ -28,11 +28,11 @@ def user_signin():
     else:
         for char in username:
             if char == ' ':
-                username_error = "Usernames can not contain a space character."
+                username_error = "Usernames can not contain a space character"
                 username = username
 
     if len(password) > 20 or len(password) < 3:
-        password_error = "Passwords must be within 3-20 characters."
+        password_error = "Passwords must be within 3-20 characters"
     else:
         for char in password:
             if char == ' ':
